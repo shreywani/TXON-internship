@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(48, 45, 45, 0.8),rgba(66, 57, 57, 0)),url("pic1.jpg");
+    background-size: cover;
+    font-family: 'Cinzel', serif;
+}
+
+nav{
+   width:100%;
+   height:100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(252, 251, 250);
+}
+
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(212, 210, 200);
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+
+
+}
+
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid white;
+    transition: 0.4s linear;
+}
+
+.menu a:hover:before{
+    width: 90%;
+}
+
+.login a{
+    text-decoration: none;
+    color: rgb(232, 229, 225);
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: rgb(59, 62, 61);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.login a:hover{
+    background: transparent;
+    border: 1px solid rgb(150, 138, 138);
+
+}
+
+.headertext{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: rgb(194, 190, 186);
+}
+
+.headertext span{
+    letter-spacing: 5px;
+}
+
+.headertext h1{
+    font-size: 3.5em;
+}
+
+.headertext a{
+    text-decoration: none;
+    background: rgb(205, 205, 194);
+    color: rgb(9, 8, 8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    letter-spacing: 5px;
+}
+.headertext a:hover{
+    background: transparent;
+    border: 1px solid rgb(187, 197, 179);
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(16, 15, 15);
+    opacity: 0.5;
+    color: rgb(181, 167, 167);
+    text-align: center;
+    padding: 10px;
+  }
